@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaini+Purva&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+body {
+    font-family: "Spectral", serif;
+    font-weight: 600;
+    font-style: normal;
+    background: url('Images/image2.webp') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    color: rgb(255, 255, 255);
+    background:url('Images/image8.webp') no-repeat right center fixed;
+    background-size:contain;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 20px;
+    box-shadow: rgba(0, 0, 0, 0.666) 0px 22px 70px 4px;
+}
+
+h1 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+input,
+select,
+button {
+    padding: 10px;
+    border:1px solid black;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+button {
+    background: #016e59;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+button:active {
+    animation: buttonPress 0.3s;
+}
+
+#swap-button {
+    padding: 10px 20px;
+    background: #4af466;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+#swap-button:hover {
+    background: #5a6268;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+.dropdown-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#clear-button {
+    background: #dc3545;
+    transition: 0.3s;
+}
+
+#clear-button:hover {
+    background: #c82333;
+}
+
+@keyframes buttonPress {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.90);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
